@@ -1,0 +1,29 @@
+{
+  "now": 1767225600,
+  "skew_seconds": 300,
+  "profiles": [
+    {
+      "name": "strict",
+      "allow_anonymous": false
+    },
+    {
+      "name": "open",
+      "allow_anonymous": true
+    }
+  ],
+  "authorization_roles": {
+    "/Service/Reflector": [
+      "testuser1@TEST.GOKRB5"
+    ],
+    "/Service/Mirror": [
+      "testuser1@TEST.GOKRB5"
+    ]
+  },
+  "methods": [
+    "/Service/Reflector",
+    "/Service/Mirror",
+    "/Service/Health",
+    "/Service/Admin",
+    "/Service/Unlisted"
+  ]
+}

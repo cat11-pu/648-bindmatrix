@@ -1,0 +1,51 @@
+{
+  "note": "Reference vectors for the key-derivation, AES-CTS and aead layers, produced by gokrb5 v8.4.2 at authoring time with a synthetic key; self-check material only.",
+  "vectors": [
+    {
+      "name": "derive-ke-usage2",
+      "kind": "derive-key",
+      "etype": 18,
+      "usage": 2,
+      "octet": "0xaa",
+      "key_hex": "cc63289bd2819f611b92a24194d2ef3dca46f07b408985e9522503dda6753cb3",
+      "ct_hex": "",
+      "out_hex": "b33ffbc85f9f5b6b3635b512b9f54eb6ed22f3e1d9e3289a7da1158cb88c13c5"
+    },
+    {
+      "name": "derive-ki-usage7",
+      "kind": "derive-key",
+      "etype": 18,
+      "usage": 7,
+      "octet": "0x55",
+      "key_hex": "cc63289bd2819f611b92a24194d2ef3dca46f07b408985e9522503dda6753cb3",
+      "ct_hex": "",
+      "out_hex": "22715943fe2e487c93ab5d8eeff1e784daa2c378163c0630f25bb1f69415e1ba"
+    },
+    {
+      "name": "cts-zero-iv",
+      "kind": "cts",
+      "etype": 18,
+      "key_hex": "cc63289bd2819f611b92a24194d2ef3dca46f07b408985e9522503dda6753cb3",
+      "pt_hex": "62696e646d61747269782d6374732d766563746f722d30313233343536373839",
+      "ct_hex": "ef456c4a3911e4ccccd90be36dcde6f523d7e085823d479d22798bc262d0a8d6"
+    },
+    {
+      "name": "aead-usage2",
+      "kind": "aead",
+      "etype": 18,
+      "usage": 2,
+      "key_hex": "cc63289bd2819f611b92a24194d2ef3dca46f07b408985e9522503dda6753cb3",
+      "msg_hex": "62696e646d61747269782d7469636b65742d75736167652d32",
+      "ct_hex": "2df60188a8e88be5be2930c186b3b0c9ec71086c56eba772fd38ab618060d8ce6bb09ddfcac86f700518dbcc39c127c9c5c42cd0ce"
+    },
+    {
+      "name": "aead-usage7",
+      "kind": "aead",
+      "etype": 18,
+      "usage": 7,
+      "key_hex": "cc63289bd2819f611b92a24194d2ef3dca46f07b408985e9522503dda6753cb3",
+      "msg_hex": "62696e646d61747269782d61757468656e74696361746f722d75736167652d37",
+      "ct_hex": "ed51908e5fb6709f0225e2764787e0fbc75c6c64440d486f7b700dd2c333cf182a0053171cf6059e5418637543c5c24acbdbeb157edf920c70c18e6a"
+    }
+  ]
+}
